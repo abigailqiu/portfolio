@@ -1,0 +1,184 @@
+.hero {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+  align-items: end;
+  position: relative;
+}
+
+.copy {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+}
+
+.kicker {
+  font-size: 28px;
+  color: var(--cobalt);
+  transform: rotate(-2deg);
+  transform-origin: left;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05em;
+  font-size: 104px;
+  line-height: 0.95;
+  font-weight: 500;
+}
+
+.name {
+  display: block;
+}
+
+.line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25em;
+  font-size: 0.62em;
+  font-weight: 400;
+}
+
+.lineLabel {
+  color: var(--ink-2);
+}
+
+.wordSlot {
+  display: inline-grid;
+  perspective: 600px;
+}
+
+.wordSlot > * {
+  grid-area: 1 / 1;
+}
+
+.word {
+  font-style: italic;
+  color: var(--tomato);
+  white-space: nowrap;
+}
+
+.lede {
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 560px;
+  color: var(--ink-2);
+}
+
+.ctas {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.noteFrom,
+.noteStudying,
+.noteMaking {
+  position: absolute;
+  font-size: 24px;
+  color: var(--cobalt);
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.noteFrom {
+  top: -8px;
+  right: 0;
+  transform: rotate(3deg);
+}
+
+.noteStudying {
+  top: 70px;
+  left: -36px;
+  color: var(--tomato);
+  transform: rotate(-8deg);
+}
+
+.noteMaking {
+  bottom: -44px;
+  right: 0;
+  color: var(--ink-2);
+  transform: rotate(-2deg);
+}
+
+.art {
+  grid-column: span 4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 420px;
+}
+
+.portraitCard {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  background: var(--card);
+  border: var(--line);
+  border-radius: 160px 160px 24px 24px;
+  transform: rotate(3deg);
+  box-shadow: 8px 8px 0 var(--cobalt);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: transform 0.4s var(--ease);
+}
+
+.portraitCard:hover {
+  transform: rotate(0deg);
+}
+
+.portraitNote {
+  font-size: 24px;
+  color: var(--ink-2);
+  text-align: center;
+  padding: 0 24px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 80px;
+  }
+  .copy {
+    grid-column: span 12;
+  }
+  .art {
+    grid-column: span 12;
+    justify-content: flex-start;
+    min-height: 0;
+    padding-top: 40px;
+  }
+  .noteFrom {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
+  .title {
+    font-size: 56px;
+  }
+  .lede {
+    font-size: 18px;
+  }
+  .noteStudying {
+    right: auto;
+    left: 320px;
+  }
+  .noteMaking {
+    bottom: -36px;
+  }
+}

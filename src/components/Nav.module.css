@@ -1,0 +1,37 @@
+.nav {
+  padding-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.links a:not(.btn):hover {
+  color: var(--tomato);
+}
+
+@media (max-width: 720px) {
+  .links {
+    gap: 18px;
+    font-size: 15px;
+  }
+  .links a:not(.btn):nth-child(3) {
+    display: none;
+  }
+}
