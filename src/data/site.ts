@@ -1,26 +1,14 @@
-// Personal details. Bracketed values are placeholders — fill in and the site updates.
 export const site = {
   name: 'abigail qiu',
   displayName: 'Abigail Qiu',
-  // Words that cycle in the hero: "Abigail is a ___"
-  identities: ['mathematician', 'ceramicist', 'film photographer', 'math coach', 'reader'],
   heroSentence: ['Math and CS @ MIT', 'I like creative tech!'],
-  annotations: {
-    from: 'from Chandler, AZ',
-    reading: 'currently reading: Yesteryear',
-  },
-  currently: ["MIT '30 · Course 18 + 6-4", 'shooting a roll of film a month'],
+  nextNote:
+    "What's (possibly) next:  an explorable 3D Gaussian splat of a party built from photos around the room / programming animations on a circular ESP LED screen.",
   about: [
-    'I like problems with a clean answer and projects with a messy one. Most weeks I’m working on something small end-to-end — a model, a tool, a visualization, a bowl — and this page is where those land.',
-    '[A second paragraph about you: what you care about, what you’re looking for, what you do when you’re not working.]',
+    "Hi! I'm Abigail (Abby). I was born in Seattle, Washington and raised in Chandler, Arizona. My interests are in human computer interaction and applied AI. I'm trying to find the right balance between AI and non-AI assisted work in my projects and learning.",
   ],
-  skills: ['python', 'react', 'scikit-learn', 'tensorflow', 'd3'],
-  marquee: ['math 18 + ai 6-4', 'ceramics', 'film photography', 'data viz', 'competition math', 'reading'],
+  marquee: ['ceramics', 'photography', 'music', 'tech', 'reading'],
   email: 'abigailqiu@gmail.com',
-  links: [
-    { label: 'linkedin', href: 'https://linkedin.com/in/abigailqiu' },
-    { label: 'github', href: 'https://github.com/[handle]' },
-    { label: 'résumé', href: '/resume.pdf' },
-  ],
-  footerNote: '© 2026 · made in Cambridge, MA',
+  links: [{ label: 'github', href: 'https://github.com/abigailqiu' }],
+  footerNote: '© 2026',
 }

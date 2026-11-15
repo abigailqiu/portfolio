@@ -6,7 +6,6 @@ export function Footer() {
     <footer id="contact" className={styles.footer}>
       <div className={`container ${styles.inner}`}>
         <h2 className={styles.h2}>
-          let's make something —{' '}
           <a href={`mailto:${site.email}`} className={styles.email}>
             email me
           </a>

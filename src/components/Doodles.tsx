@@ -10,7 +10,7 @@ export function Star({ style, color = 'var(--mustard)', size = 64 }: { style?: C
 
 export function Wave({ style, color = 'var(--cobalt)' }: { style?: CSSProperties; color?: string }) {
   return (
-    <svg style={style} width="90" height="40" viewBox="0 0 90 40" aria-hidden="true" fill="none" stroke={color} strokeWidth="3" strokeLinecap="round">
+    <svg style={{ overflow: 'visible', ...style }} width="90" height="50" viewBox="0 0 90 50" aria-hidden="true" fill="none" stroke={color} strokeWidth="3" strokeLinecap="round">
       <path d="M4 30c10-20 18-20 26 0s18 20 26 0 18-20 26 0" />
     </svg>
   )

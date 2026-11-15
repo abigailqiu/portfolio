@@ -126,12 +126,16 @@
   border-radius: 160px 160px 24px 24px;
   transform: rotate(3deg);
   box-shadow: 8px 8px 0 var(--cobalt);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+  overflow: hidden;
   transition: transform 0.4s var(--ease);
+}
+
+.portraitImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .portraitCard:hover {

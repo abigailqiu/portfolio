@@ -14,13 +14,14 @@ type Props = {
   interactive?: boolean
   /** object-fit for images/video */
   fit?: 'cover' | 'contain'
+  style?: React.CSSProperties
 }
 
 /** Renders an image, muted looping video, or spinning STL — or a labelled placeholder. */
-export function Media({ media, note, swatch, className, imgClassName, interactive, fit = 'cover' }: Props) {
+export function Media({ media, note, swatch, className, imgClassName, interactive, fit = 'cover', style }: Props) {
   if (!media) {
     return (
-      <div className={className} style={{ background: swatch }}>
+      <div className={className} style={{ background: swatch, ...style }}>
         <span className="placeholder" style={{ fontSize: 24 }}>
           [{note ?? 'image'}]
         </span>
@@ -29,7 +30,7 @@ export function Media({ media, note, swatch, className, imgClassName, interactiv
   }
   if (media.kind === 'stl') {
     return (
-      <div className={className} style={{ background: media.background ?? swatch }}>
+      <div className={className} style={{ background: media.background ?? swatch, ...style }}>
         <Suspense fallback={null}>
           <StlViewer src={media.src} color={media.color} interactive={interactive} />
         </Suspense>
@@ -38,7 +39,7 @@ export function Media({ media, note, swatch, className, imgClassName, interactiv
   }
   if (media.kind === 'video') {
     return (
-      <div className={className} style={{ background: swatch }}>
+      <div className={className} style={{ background: swatch, ...style }}>
         <video
           src={media.src}
           poster={media.poster}
@@ -54,7 +55,7 @@ export function Media({ media, note, swatch, className, imgClassName, interactiv
     )
   }
   return (
-    <div className={className} style={{ background: swatch }}>
+    <div className={className} style={{ background: swatch, ...style }}>
       <img
         src={media.src}
         alt={media.alt ?? ''}

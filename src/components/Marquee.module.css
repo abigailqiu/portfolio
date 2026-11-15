@@ -16,6 +16,11 @@
   animation-play-state: paused;
 }
 
+.group {
+  display: flex;
+  flex-shrink: 0;
+}
+
 .item {
   display: inline-flex;
   align-items: center;

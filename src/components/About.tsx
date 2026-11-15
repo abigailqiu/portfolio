@@ -7,12 +7,7 @@ export function About() {
       <div className={styles.noteCol}>
         <div className={styles.note}>
           <span className="tape" aria-hidden="true" />
-          <p className={`hand ${styles.noteTitle}`}>currently</p>
-          <ul className={styles.list}>
-            {site.currently.map((c) => (
-              <li key={c}>{c}</li>
-            ))}
-          </ul>
+          <p className={styles.list}>{site.nextNote}</p>
         </div>
       </div>
       <div className={styles.copy}>
@@ -22,13 +17,6 @@ export function About() {
             {para}
           </p>
         ))}
-        <div className={styles.skills}>
-          {site.skills.map((s) => (
-            <span key={s} className="pill">
-              {s}
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   )
