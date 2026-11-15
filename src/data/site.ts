@@ -9,6 +9,9 @@ export const site = {
   ],
   marquee: ['ceramics', 'photography', 'music', 'tech', 'reading'],
   email: 'abigailqiu@gmail.com',
-  links: [{ label: 'github', href: 'https://github.com/abigailqiu' }],
+  links: [
+    { label: 'github', href: 'https://github.com/abigailqiu' },
+    { label: 'résumé', href: '/resume.pdf' },
+  ],
   footerNote: '© 2026',
 }

@@ -32,7 +32,6 @@ export function WorkGrid() {
                 <span className="tag" style={{ background: p.tagBg }}>
                   {p.tag}
                 </span>
-                {p.year && <span className={styles.year}>{p.year}</span>}
               </div>
               <h3 className={styles.h3}>{p.title}</h3>
               <span className={styles.open}>

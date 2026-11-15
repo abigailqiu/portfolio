@@ -73,13 +73,7 @@
 .meta {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 12px;
-}
-
-.year {
-  font-size: 13px;
-  color: var(--muted);
 }
 
 .h3 {
