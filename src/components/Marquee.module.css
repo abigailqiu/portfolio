@@ -9,7 +9,7 @@
 .track {
   display: flex;
   width: max-content;
-  animation: scroll 28s linear infinite;
+  animation: scroll 56s linear infinite;
 }
 
 .strip:hover .track {

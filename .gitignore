@@ -6,3 +6,4 @@ dist
 *.tsbuildinfo
 vite.config.ts.timestamp-*.mjs
 CLAUDE.md
+NOTES.md

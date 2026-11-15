@@ -20,11 +20,6 @@
   align-items: center;
 }
 
-.year {
-  font-size: 14px;
-  color: var(--muted);
-}
-
 .h1 {
   font-size: 96px;
   line-height: 0.95;

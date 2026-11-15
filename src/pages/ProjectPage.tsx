@@ -41,7 +41,6 @@ export function ProjectPage() {
             <span className="tag" style={{ background: p.tagBg }}>
               {p.tag}
             </span>
-            {p.year && <span className={styles.year}>{p.year}</span>}
           </div>
           <h1 className={styles.h1}>{p.title}</h1>
           <p className={styles.summary}>{p.summary}</p>
