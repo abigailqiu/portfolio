@@ -27,8 +27,11 @@ export function Cursor() {
       y = e.clientY
       const target = e.target as HTMLElement | null
       hovering = !!target?.closest('a, button, [data-cursor="ring"]')
+      const onDark = !!target?.closest('footer')
       ring.current?.classList.toggle(styles.active, hovering)
+      ring.current?.classList.toggle(styles.onDark, onDark)
       dot.current?.classList.toggle(styles.hidden, hovering)
+      dot.current?.classList.toggle(styles.onDark, onDark)
     }
 
     const loop = () => {

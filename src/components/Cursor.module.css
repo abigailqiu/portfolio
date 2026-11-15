@@ -13,7 +13,11 @@
   width: 8px;
   height: 8px;
   background: var(--ink);
-  transition: opacity 0.15s;
+  transition: opacity 0.15s, background 0.2s;
+}
+
+.dot.onDark {
+  background: var(--paper);
 }
 
 .dot.hidden {
@@ -35,6 +39,15 @@
   opacity: 1;
   border-color: var(--tomato);
   background: rgba(228, 87, 46, 0.12);
+}
+
+.ring.onDark {
+  border-color: var(--paper);
+}
+
+.ring.onDark.active {
+  border-color: var(--paper);
+  background: rgba(246, 241, 231, 0.16);
 }
 
 @media (hover: none), (pointer: coarse) {
